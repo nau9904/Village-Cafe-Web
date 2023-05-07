@@ -24,11 +24,11 @@ const Header = () => {
   const cartItemNumber = useSelector((state)=>state.product.cartItem)
 
   return (
-    <header className='fixed shadow-md w-full h-16 px-2 md:px-4 z-50 bg-white'>
+    <header className='fixed shadow-md w-full h-17 px-2 md:px-4 z-50 bg-white'>
         {/* desktop */}
-        <div className='flex items-center h-full justify-between'>
+        <div className='flex items-center h-full justify-between ml-5'>
             <Link to={''}>
-            <div className='h-14'>
+            <div className='h-20'>
                 <img src={logo} className='h-full'/>
             </div>
             </Link>

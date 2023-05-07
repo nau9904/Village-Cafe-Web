@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const productData = useSelector((state) => state.product.productList);
-  const homeProductCartList = productData.slice(5, 12);
+  const homeProductCartList = productData.slice(5, 11);
   const homeProductCartListVegetables = productData.filter(
     (el) => el.category === "coffee",
     []

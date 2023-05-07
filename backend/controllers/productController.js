@@ -3,8 +3,8 @@ const productModel = require("../models/products");
 //Product API
 class productController {
   //[GET]/product
-  async showProduct(req, res) {
-    await productModel.find({}).then((data) => res.send(JSON.stringify(data)));
+   async showProduct(req, res) {
+   await productModel.find({}).then((data) => res.send(JSON.stringify(data)));
   }
 
   //[POST] /newproduct
