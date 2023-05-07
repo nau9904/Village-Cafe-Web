@@ -36,8 +36,7 @@ const Header = () => {
             <div className='flex items-center gap-4 md:gap-7'>
               <nav className='flex gap-4 md:gap-6 text-base md:text-lg'>
                   <Link to={''}>Home</Link>
-                  <Link to={'menu/643dfc3a96ad4dd707bdeb58'}>Menu</Link>
-                  <Link to={'about'}>About</Link>
+                  <Link to={'menu/644ca47f56cbc8e72888b24d'}>Menu</Link>
                   <Link to={'contact'}>Contact</Link>
               </nav>
               {userData.email ? (
@@ -73,8 +72,7 @@ const Header = () => {
                       )}
                       <nav className="text-base md:text-lg flex flex-col md:hidden">
                         <Link to={""} className="px-2 py-1"> Home</Link>
-                        <Link to={"menu/644bf5d5e9a3dbeb15697b26"} className="px-2 py-1"> Menu</Link>
-                        <Link to={"about"} className="px-2 py-1"> About</Link>
+                        <Link to={"menu/644ca47f56cbc8e72888b24d"} className="px-2 py-1"> Menu</Link>
                         <Link to={"contact"} className="px-2 py-1"> Contact</Link>
                       </nav>
                     </div>

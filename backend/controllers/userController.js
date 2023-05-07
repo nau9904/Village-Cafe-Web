@@ -1,12 +1,5 @@
 const userModel = require("../models/users");
-const user = require("../models/users");
-const express = require("express");
 const bcrypt = require("bcrypt");
-const ErrorHandler = require("../utils/ErrorHandler");
-const catchAsyncErrors = require("../middleware/catchAsyncErrors");
-const jwt = require("jsonwebtoken");
-const {isAuthenticated} = require("../middleware/auth");
-const sendToken = require("../utils/jwtToken")
 
 // User API
 class userController {
@@ -47,7 +40,9 @@ class userController {
               data: dataSend,
             });
           } else {
-            return res.status(400).send(new Error('Something wrong with Email or Password!'))
+            return res
+              .status(400)
+              .send(new Error("Something wrong with Email or Password!"));
           }
         });
       })
@@ -59,7 +54,6 @@ class userController {
         });
       });
   }
-  
 
   //[POST] /signup
   async Signup(req, res) {

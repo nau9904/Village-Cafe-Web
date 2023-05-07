@@ -1,11 +1,16 @@
-import React from "react";
+import React,{useState} from "react";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import CartProduct from "../components/CartProduct";
 import emptyCartImage from "../assest/empty.gif"
+import toast from "react-hot-toast";
+import Paymentform from "../components/PaymentForm";
 
 const Cart = () => {
+  const [showPayment, setShowPayment] = useState(false);
   const productCartItem = useSelector((state) => state.product.cartItem);
-  console.log(productCartItem);
+  const user = useSelector((state) => state.user);
+  const navigator = useNavigate();
 
   const totalPrice = productCartItem.reduce(
     (acc, curr) => acc + parseInt(curr.total),
@@ -15,6 +20,17 @@ const Cart = () => {
     (acc, curr) => acc + parseInt(curr.qty),
     0
   );
+
+  const paymentHandle = async() => {
+    if(user.email) {
+      setShowPayment((prev) => !prev)
+    }else {
+      toast.error("You have not login");
+      setTimeout(() => {
+        navigator('/login');
+      }, 1000);
+    }
+  }
   return (
     <>
     
@@ -44,7 +60,7 @@ const Cart = () => {
           </div>
 
           {/* total cart item  */}
-          <div className="w-full max-w-md  ml-auto">
+          <div className="w-full max-w-md  ml-auto mr-8">
             <h2 className="bg-blue-500 text-white p-2 text-lg">Summary</h2>
             <div className="flex w-full py-2 text-lg border-b">
               <p>Total Qty :</p>
@@ -56,9 +72,12 @@ const Cart = () => {
                 <span className="text-red-500">$</span> {totalPrice}
               </p>
             </div>
-            <button className="bg-red-500 w-full text-lg font-bold py-2 text-white">
+            <button className="bg-red-500 w-full text-lg font-bold py-2 text-white" onClick={paymentHandle}>
               Payment
             </button>
+            {showPayment && (
+              <Paymentform/>
+            )}
           </div>
         </div>
 
@@ -75,5 +94,6 @@ const Cart = () => {
     </>
   );
 };
+
 
 export default Cart;

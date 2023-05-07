@@ -3,13 +3,12 @@ import { useSelector } from "react-redux";
 import CardFeature from "../components/CartFeature";
 import HomeCard from "../components/HomeCard";
 import { GrPrevious, GrNext } from "react-icons/gr";
-import FilterProduct from "../components/FilterProduct";
 import AllProduct from "../components/AllProduct";
 import { Link } from "react-router-dom";
 
 const Home = () => {
   const productData = useSelector((state) => state.product.productList);
-  const homeProductCartList = productData.slice(1, 5);
+  const homeProductCartList = productData.slice(5, 12);
   const homeProductCartListVegetables = productData.filter(
     (el) => el.category === "coffee",
     []
@@ -29,13 +28,6 @@ const Home = () => {
     <div className="p-2 md:p-4">
       <div className="md:flex gap-4 py-2">
         <div className="md:w-1/2">
-          <div className="flex gap-3 bg-slate-300 w-40 px-2 items-center rounded-full">
-            <p className="text-sm font-medium text-slate-900">Come with us</p>
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png"
-              className="h-7"
-            />
-          </div>
           <h2 className="text-4xl md:text-7xl font-bold py-3">
             Sit and enjoy like{" "}
             <span className="text-red-600 text-">Your Home</span>
@@ -51,7 +43,7 @@ const Home = () => {
             customers love us!
           </p>
           <button className="font-bold bg-red-500 text-slate-200 px-4 py-2 rounded-md">
-            <Link to={"menu/643dfc3a96ad4dd707bdeb58"}>Order Now!</Link>
+            <Link to={"menu/644ca47f56cbc8e72888b24d"}>Order Now!</Link>
           </button>
         </div>
 
