@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Village-Cafe-Web/static/css/main.4afa318b.css",
+    "main.js": "/Village-Cafe-Web/static/js/main.fc0ab55d.js",
+    "static/js/787.cda612ba.chunk.js": "/Village-Cafe-Web/static/js/787.cda612ba.chunk.js",
+    "static/media/logo.png": "/Village-Cafe-Web/static/media/logo.67bb7757e682e8302f41.png",
+    "static/media/empty.gif": "/Village-Cafe-Web/static/media/empty.644ecc4e5dd68dfc0977.gif",
+    "static/media/login-animation.gif": "/Village-Cafe-Web/static/media/login-animation.97a8f494ac4826dd1781.gif",
+    "index.html": "/Village-Cafe-Web/index.html",
+    "main.4afa318b.css.map": "/Village-Cafe-Web/static/css/main.4afa318b.css.map",
+    "main.fc0ab55d.js.map": "/Village-Cafe-Web/static/js/main.fc0ab55d.js.map",
+    "787.cda612ba.chunk.js.map": "/Village-Cafe-Web/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4afa318b.css",
+    "static/js/main.fc0ab55d.js"
+  ]
+}
