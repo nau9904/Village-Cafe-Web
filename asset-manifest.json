@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.4afa318b.css",
-    "main.js": "/static/js/main.f1c5418d.js",
-    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
-    "static/media/logo.png": "/static/media/logo.67bb7757e682e8302f41.png",
-    "static/media/empty.gif": "/static/media/empty.644ecc4e5dd68dfc0977.gif",
-    "static/media/login-animation.gif": "/static/media/login-animation.97a8f494ac4826dd1781.gif",
-    "index.html": "/index.html",
-    "main.4afa318b.css.map": "/static/css/main.4afa318b.css.map",
-    "main.f1c5418d.js.map": "/static/js/main.f1c5418d.js.map",
-    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+    "main.css": "/villagecafe/static/css/main.4afa318b.css",
+    "main.js": "/villagecafe/static/js/main.8eabd575.js",
+    "static/js/787.cda612ba.chunk.js": "/villagecafe/static/js/787.cda612ba.chunk.js",
+    "static/media/logo.png": "/villagecafe/static/media/logo.67bb7757e682e8302f41.png",
+    "static/media/empty.gif": "/villagecafe/static/media/empty.644ecc4e5dd68dfc0977.gif",
+    "static/media/login-animation.gif": "/villagecafe/static/media/login-animation.97a8f494ac4826dd1781.gif",
+    "index.html": "/villagecafe/index.html",
+    "main.4afa318b.css.map": "/villagecafe/static/css/main.4afa318b.css.map",
+    "main.8eabd575.js.map": "/villagecafe/static/js/main.8eabd575.js.map",
+    "787.cda612ba.chunk.js.map": "/villagecafe/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4afa318b.css",
-    "static/js/main.f1c5418d.js"
+    "static/js/main.8eabd575.js"
   ]
 }
